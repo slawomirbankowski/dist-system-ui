@@ -1,0 +1,161 @@
+
+:root,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    max-width: 80%;
+    margin: auto;
+}
+
+.left-menu {
+    z-index: 10;
+    position: left;
+}
+
+.left-menu-hidden {
+    display: none;
+}
+
+.left-menu-visible {
+    display: flex;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10%;
+}
+
+.nav-buttons > a + a {
+    margin-left: 2em;
+}
+
+.nav .user {
+    margin-left: auto;
+}
+
+.nav .notifications {
+    margin-left: 2rem;
+}
+
+.main {
+    display: flex;
+}
+
+.streams-menu {
+    flex: 1;
+}
+
+.stream-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.content {
+    flex: 3;
+}
+/* END LAYOUT */
+
+
+/* PRETTIFY */
+
+.main {
+
+}
+
+.main > * {
+    padding: .5em;
+    border-radius: .3em;
+    background-color: #eee;
+}
+
+.main > * + * {
+    margin-left: .5em;
+}
+
+.nav {
+    border-radius: .3em;
+    background-color: #eee;
+}
+
+.nav-buttons {
+    padding: 1em;
+}
+
+.nav-button {
+    padding: 1em 1em;
+    border-radius: 0.3em;
+    background-color: rgb(222, 184, 135);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(83, 82, 82);
+}
+
+.nav-button.user {
+    text-transform: none;
+}
+
+.nav-button:hover {
+    background-color: rgb(160, 130, 90);
+}
+
+.streams-menu ul {
+    padding: 1em;
+    margin: 0;
+}
+
+.stream-list {
+    list-style-type: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.stream-list a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    padding: .2em;
+    border-radius: .1em;
+}
+
+.stream-list > a + a {
+    margin-top: .5em;
+}
+
+.stream-list a:link {
+    color: #444;
+}
+
+.stream-list a:visited {
+    color: #444;
+}
+
+.stream-list a:hover {
+    color: #444;
+    background-color: #bbb;
+}
+
+.stream-list a:visited {
+    color: #444;
+}
+
+.content {
+    color: #444;
+    font-family: sans-serif;
+}
+
